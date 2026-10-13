@@ -1,0 +1,11 @@
+{
+  "Name": "Amiya NPC",
+  "Author": "aline",
+  "Version": "1.0.0",
+  "Description": "将星露谷物语中的一位自定义村民替换为《明日方舟》的罗德岛公开领袖阿米娅。带来她温柔而坚定的日常对话、婚后对话与生日设定。",
+  "UniqueID": "aline.amiyanpc",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
