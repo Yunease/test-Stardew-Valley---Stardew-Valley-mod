@@ -1,0 +1,127 @@
+{
+    "Format": "2.6.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Characters/Amiya",
+            "FromFile": "assets/sprites.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Amiya",
+            "FromFile": "assets/portraits.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Amiya",
+            "FromFile": "assets/dialogues.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/Amiya",
+            "FromFile": "assets/schedules.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueAmiya",
+            "FromFile": "assets/MarriageDialogue.json"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/HinataExteriorHouse.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 22,
+                "Width": 8,
+                "Height": 11
+            }
+        },
+        {
+           "Action":"Load",
+           "Target":"Maps/HinataHouse",
+           "FromFile":"assets/HinataHouse.tmx"
+        },
+        {
+           "Action":"EditData",
+           "Target":"Data/Locations",
+           "Entries": {
+            "HinataHouse":{
+                "DisplayName":"阿米娅的家",
+                "DefaultArrivalTile": {
+                    "X":12,
+                    "Y":12
+                },
+                "CreateOnLoad":{
+                    "MapPath":"Maps/HinataHouse",
+                    "AlwaysActive":true,
+                    "FormerLocationNames": [
+                        "Custom_HinataHouse"
+                    ]
+                }
+            }
+           }
+        },
+        {
+            "Action":"EditMap",
+            "Target":"Maps/Town",
+            "MapTiles": [
+                {
+                  "Position": {
+                    "X":60,
+                    "Y":30
+                  },
+                  "Layer": "Buildings",
+                  "SetProperties":{
+                    "Action":"LockedDoorWarp 3 11 HinataHouse 900 2100"
+                  }
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Amiya": {
+                    "DisplayName": "阿米娅",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 23,
+                    "HomeRegion": "HinataHouse",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+
+                    "CanBeRomanced": true,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "HinataHouse",
+                            "Tile": {
+                            "X": 3,
+                            "Y": 7
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Amiya": "谢谢你，博士……这是给我的吗？/-80/这颗宝石真漂亮。它让我想起，哪怕在最灰暗的时候，这片大地也藏着值得守护的光。/-79/清甜的味道。谢谢你，愿意与我分享这样简单的幸福。//-7/这是……你做的吗？抱歉，我似乎更习惯朴素的食物。//我会好好收下的。"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Amiya0": "博士……我从未想过，自己还能拥有这样平静的未来。谢谢你，愿意把你的明天，分给我一部分。",
+                "Amiya1": "（轻轻握住你的手）无论这片土地会遇到什么，只要有你在，我就不怕。"
+            }
+        }
+    ]
+}
